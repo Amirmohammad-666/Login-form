@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #d0d0d0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.login_page {
+    /* background-color: gold; */
+    width: 81%;
+    max-width: 1200px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    border: 5px solid #fff;
+    overflow: hidden;
+}
+
+.login_page form{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur(22px);
+}
+
+.login_page form h1{
+    color: #fff;
+    margin-bottom: 3rem;
+}
+
+.login-img {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: #fff;
+}
+
+.login-img img{
+    object-fit: cover;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem; 
+    width: 50%;
+}
+
+.form-group label{
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.form-group input{
+    border: 2px solid #fff;
+    background-color: transparent;
+    height: 47px;
+    border-radius: 20px;
+}
+
+input:focus,input:active{
+    outline: 0;
+}
+
+.button-form{
+    width: 50%;
+}
+
+.button-form button{
+    border: none;
+    background-color: #fff;
+    width: 100%;
+    height: 45px;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.bottom-form a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.circle_1{
+    width: 800px;
+    height: 800px;
+    position: fixed;
+    background-image: linear-gradient(to right,#94a3c2,#596888);
+    z-index: -1;
+    border-radius: 100%;
+    left: 5rem;
+    top: -1rem;
+    transform: translate(-38%);
+}
+
+@media screen and (max-width:768px) {
+    .login-img{
+        display: none;
+    }
+
+    .login_page form{
+        width: 100%;
+    }
+    
+
+
+}
